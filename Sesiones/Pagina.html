@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<?php 
+session_start();
+require("Sesion.php");
+$name = $_SESSION['nombre'];
+?>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="utf-8" />
+	<title>Sesiones php</title>
+</head>
+<body onload="dt()">
+<a href="ssession.php">Siguiente</a><br /><br />
+practica de datos de sesion en php:
+<br />
+<textarea cols="50" rows="20" name="mytextarea"></textarea>
+<input id="datos" name="datos" type="text" />
+<input value="$name"/>
+<script type="text/javascript">
+function dt(){
+    var b = $name;
+   $("#datos").val(b); 
+});
+</script>
+</body>
+</html>

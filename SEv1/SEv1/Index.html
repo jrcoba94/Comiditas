@@ -1,0 +1,598 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <title>S&amp;E | Scan &amp; Eat</title>
+    
+    <link href="ScanEmp/imgs/ico/favicon.ico" rel="shortcut icon" type="imagen/x-icon" />
+
+    <link href="font-awesome/font/flaticon.css" rel="stylesheet" />
+    
+    <link href="../ScanEmp/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../ScanEmp/css/font-awesome.css" rel="stylesheet" />
+    <link href="../ScanEmp/css/linecons.css" rel="stylesheet" />
+
+    <link href="ScanEmp/css/animations.css" rel="stylesheet" />
+    
+    <link href="ScanEmp/hermes/chat-widget.css" rel="stylesheet" />
+
+    <link href="../ScanEmp/css/theme-base.css" rel="stylesheet" />
+    <link href="../ScanEmp/css/theme-elements.css" rel="stylesheet" />
+    <link href="../ScanEmp/css/responsive.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../ScanEmp/css/css" />
+
+    <link rel="stylesheet" type="text/css" href="../ScanEmp/css/custom.css" media="screen" />    
+
+    <!-- Ventana modal -->
+    <script src="ScanEmp/js/shadowbox-1b8e4a9.js"></script>
+    <script type='text/javascript'>
+        Shadowbox.init({
+            overlayColor: "#000",
+            overlayOpacity: "0.6",
+        });
+    </script>
+
+</head>
+<body id="sb" class="wide device-lg" onload="link()">
+
+    <div class="loader-wrapper" style="display: none;" data-wow-duration="4s">
+        <div class="loader" style="display: none;">
+            <img src="../ScanEmp/imgs/logoP2.png" alt="Loading" />
+            <span class="loader-title">Loading...</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <!-- NAVABAR HEADER -->
+        <header id="header" class="">
+            <div id="header-wrap">
+                <div class="container">
+                    <div id="logo">
+                        <a href="#sb" class="animatedParent logo" data-dark-logo="images/logo-dark.png">
+                            <img class="animated fadeInDown go" src="../ScanEmp/imgs/logoP1-2.png" alt="Logo" />
+                        </a>
+                    </div>
+                    <div class="nav-main-menu-responsive">
+                        <button data-toggle="collapse" data-target=".main-menu-collapse"><i class="fa fa-navicon"></i></button>
+                    </div>
+                    <div class="navbar-collapse collapse main-menu-collapse navigation-wrap">
+                        <div class="container">
+                            <nav id="mainMenu" class="main-menu mega-menu">
+                                <ul class="main-menu nav nav-pills">
+                                    <li class="dropdown hColor"><a href="Index.html" class="nav-to">Inicio</a></li>
+                                    <li class="dropdown hColor"><a href="Conocenos.html" class="nav-to">Conocenos</a> </li>
+                                    <li class="dropdown hColor"><a href="Servicios.html" class="nav-to">Servicio</a> </li>
+                                    <li class="dropdown hColor"><a href="Clientes.html">Clientes</a></li>
+                                    <li class="dropdown hColor"><a href="Reservaciones.html" class="nav-to">Reservaciones</a> </li>
+                                    <li class="dropdown hColor resp-active">
+                                        <a><i class="glyphicon glyphicon-user"></i></a>
+                                        <ul class="dropdown-menu " style="margin-left:-189px">
+                                            <!--<li><a href="#login-box" class="login-window" rel="">&nbsp;Login</a></li>-->
+                                            <li><a rel="" href="#" data-toggle="modal" data-target="#myModal">&nbsp;Login</a></li>
+                                            <!--<li><a rel="shadowbox;width=430;height=430;" href="#mw1">&nbsp;Login</a></li>-->
+                                            <li><a href="../Procesos/Logout.php">&nbsp;Logout</a></li>
+                                            <li><a href="Registro.html">&nbsp;Registrarse</a></li>
+                                            <!--<li><a href="Configuraciones.html">&nbsp;Configuraciones</a></li>-->
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END NAVBAR HEADER -->
+        
+        <!-- FADE UP DOWNLOAD APP -->
+        <div id="inic">
+            <div class="animatedParent" style="background-color:black;min-width:100%;min-height:100%;width: 1261px; height: 838px; margin-top: 0px; overflow: hidden;">
+                <div id="dw" class="animated fadeInLeft go pst-img" style="text-align:center">
+                    <br /><br /><br /><br /><br /><br />
+                    <br />
+                    <h3 style="color:white;font-weight:200;font-size:15px">Vive una nueva experiencia</h3>
+                    <h1 id="dl_app" style="color:white;font-weight:700;font-size:20px">Scan & Eat</h1>
+                    <br /><br />
+                    <a><input type="button" class="btnDL-app" value="Descargar" onclick="mostrarVentana()" /></a>
+                    <br /><br /><br /><br />
+                    <ul class="col-lg-12">
+                        <li><a href="https://play.google.com/store/music/album/Daft_Punk_TRON_Legacy?id=Bbcjlhafmpp5ueztndxevp4cfuq"><img style="width:58%" src="ScanEmp/imgs/Appdownload/google-play-badge (1).png" /></a></li>
+                        <li><a><img style="width:50%" src="ScanEmp/imgs/Appdownload/Download_on_the_App_Store_Badge.svg.png" /></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <video height="950" class="video-bg" preload="none" autoplay loop  muted>
+                        <source src="ScanEmp/imgs/Index_Img/restaurant.webm" type='video/webm;codecs="vp8,vorbis"' />
+                    </video>
+                </div>
+                <br /><br />
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div style="position: relative">
+                        <div class="col-sm-4">
+                            <figure style="text-align: center">
+                                
+                            </figure>
+                        </div>
+                        <div class="col-sm-4">
+                            <figure style="text-align: center">
+                                <a href="https://www.facebook.com/Scan-Share-1573459276223503/"><img class="zoom" src="ScanEmp/imgs/ico/facebook-3-512.png" /></a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="https://www.twitter.com/Scan_Share"><img class="zoom" src="ScanEmp/imgs/ico/twitter-3-512.png" /></a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="https://www.instagram.com/"><img class="zoom" src="ScanEmp/imgs/ico/instagram-512.png" /></a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="https://www.youtube.com/channel/UCREb7IxfENI42yoeb7Ermcw"><img class="zoom" src="ScanEmp/imgs/ico/youtube-512.png" /></a>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4">
+                            <figure style="text-align: center">
+                                
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <!-- END FADE UP DOWNLOAD APP -->
+        
+        <!-- ICONSSPIN -->
+        <section class="block-content">
+            <div class=" cont-fluid">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="animatedParent">
+                        <h2 class="animated bounceInLeft slow"><strong>¿Como </strong>funciona?<strong> Fácil</strong></h2>
+                        <div class="" style="position: relative">
+                            <div class="animated rotateInUpRight slowest col-sm-4">
+                                <figure style="text-align: center" onclick="dl_app">
+                                    <a href="#dl_app"><img class="iconSpin" style="border-radius: 100%" src="../ScanEmp/imgs/App/paso-1.jpg" /></a>
+                                    <br />
+                                    <figcaption>Descarga la app</figcaption>
+                                </figure>
+                            </div>
+                            <div class="animated rotateInUpRight slowest col-sm-4">
+                                <figure style="text-align: center">
+                                    <img class="iconSpin" style="border-radius: 100%" src="../ScanEmp/imgs/App/paso-2.jpg" />
+                                    <br />
+                                    <figcaption>Analiza el elemento</figcaption>
+                                </figure>
+                            </div>
+                            <div class="animated rotateInUpRight slowest col-sm-4">
+                                <figure style="text-align: center">
+                                    <img class="iconSpin" style="border-radius: 100%" src="../ScanEmp/imgs/App/paso-3.jpg" />
+                                    <br />
+                                    <figcaption>Observa</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br />
+            <div style="border-color:black;width:20px;"></div>
+        </section>
+        <!-- END ICONSSPIN -->
+        
+        <br />
+        <div class="col-lg-12" style="min-width:100%;background-color:gray;height:2px"></div>
+        <br />
+
+        
+        <section id="e_scan" class="block-content" style="min-width:100%;">
+            <div class="animatedParent col-lg-12">
+                <div class="col-lg-6" style="position:relative">
+                    <img style="z-index:-10;width:100%;width:700px;height:500px" src="ScanEmp/imgs/Index_Img/3-1.jpg" />
+                    <img class="animated fadeIn slowest img_cup" src="ScanEmp/imgs/Index_Img/shutte-0.png" />
+                    <img class="animated fadeInLeft slowest img_phone" src="ScanEmp/imgs/Index_Img/Phone9.png" />
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                    <div style="min-height:100%;height:500px;background-color:rgba(0, 0, 0, 0.05)" class="animated fadeInRight slowest">
+                        <br /><br /><br /><br /><br />
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10">
+                            <a style="text-align:justify;font-size:medium">
+                                Scan & Eat es una aplicación que
+                                te permite accesar a material 
+                                multimedia del restauran de tu 
+                                prefrencia.
+                                
+                            </a>
+                            <br /><br /><br />
+                            <div style="text-align:center;font-size:large">
+                                <a>!Solo tienes que escanear la imagen¡</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br />
+        <div class="col-lg-12" style="min-width:100%;background-color:gray;height:2px"></div>
+        <br />
+
+        <section class="block-content" style="min-width:100%">
+            <div class="animatedParent col-lg-12 col-lg-offset-1">
+                <div class="animated bounceInRight col-lg-3" style="background-color:aliceblue;text-align:center">
+                    <a>Has pedidos</a>
+                    <a>Realiza pedidos al instante y
+                    realiza el pago en linea o cuando
+                    el pedido llege a tu casa.</a>
+                </div>
+                <div class="animated bounceInUp col-lg-4" style="background-color: black; text-align: center">
+                    <a><img style="width:250px;height:450px" src="ScanEmp/imgs/Index_Img/reservarmesa.jpg" /></a>
+                </div>
+                <div class="animated bounceInLeft col-lg-3" style="background-color:aliceblue; text-align: center">
+                    <a>Has recervaciones</a>
+                    <a>Realiza reservaciones en el restaurant
+                    que elijas, realiza el pago con tarjeta o
+                    con efectivo.</a>
+                </div>
+            </div>
+        </section>
+
+        <br />
+        <div class="col-lg-12" style="min-width:100%;background-color:gray;height:2px"></div>
+        <br />
+
+        <!-- VIDEOS -->
+        <section id="vide" class="block-content">
+            <div class="animatedParent col-lg-offset-1">
+                <div class="animated growIn col-lg-12">
+                    <div style="min-width:100%;min-height:100%" title="" class="video-cont">
+                        <iframe src="http://www.youtube.com/embed/P1O-1bULeGQ" width="950" height="700"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END VIDEOS -->
+
+        <div id="messageContainer" style="display: block;">
+            <div id="messageHeader">
+                <span id="messageHeaderTitle">Scan &amp; Share- Respondemos tus dudas</span>		<span class="closeButton" style="display: none;"></span>		<div class="credits"><a href="http://soldai.com" target="_blank">Powered by SoldAI</a></div>
+            </div>
+            <div id="messageBody" style="display: none;">
+                <div id="messageText"></div>
+                <div id="messageInput">
+                    <input type="text" id="message" name="message" autocomplete="off" style="width:85%"><button id="start_button" onclick="startButton(event)" style="display: inline-block;"><img id="start_img" src="http://soldai.com/mic.gif" alt="Start"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="background-dark text-grey bkp-04">
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="widget clearfix widget-categories">
+                                <form method="post" action="Contacto.php" id="contactform">
+                                    <input id="name" name="name" class="textName" type="text" placeholder="Nombre" />
+                                    <br /><br />
+                                    <input id="email" name="email" class="textEmail" type="email" placeholder="E-mail" />
+                                    <br /><br /><br /><br />
+                                    <input id="submit" name="enviar" class="submitHB submitB" type="submit" />
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <textarea id="comment" name="comment" class="textComentary" placeholder="Comentarios"></textarea>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="widget clearfix widget-contact-us">
+                                <h4 class="widget-title">Contactanos</h4>
+                                <ul class="list-large list-icons">
+                                    <li>
+                                        <i class="fa fa-map-marker"></i>
+                                        <strong>Dirección:</strong> Call. 21 x 66 y 68 Jardines de Mérida, No. 831
+                                        <br />
+                                        Mérida, Yuc 97135
+                                    </li>
+                                    <li><i class="fa fa-phone"></i><strong>Tel:</strong> (999) 313-5991 </li>
+                                    <li>
+                                        <i class="fa fa-clock-o"></i>Lunes - Viernes: <strong>09:00 - 18:00</strong>
+                                        <br />
+                                        Sábado: <strong>09:00 - 14:00</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- /.modal-header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color:white;font-size:22px">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="color: white; font-size: 22px">Log in</h4>
+                </div>
+                <!-- /.modal-header -->
+                <form action="../Procesos/Login.php" method="post">
+                    <div class="modal-body">
+                        <input id="url" name="url" type="text" hidden="hidden" />
+                        <!-- /.form-group -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input name="emailL" type="text" class="form-control" id="emailL" placeholder="E-mail">
+                                <label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+                            </div>
+                        </div>
+                        <!-- /.form-group -->
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input name="contrasenaL" type="password" class="form-control" id="contrasenaL" placeholder="Contraseña">
+                                <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+                            </div>
+                            <!-- /.input-group -->
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                        <!-- /.checkbox -->
+                    </div>
+                    <!-- /.modal-body -->
+                    <!-- /.modal-footer -->
+                    <div class="modal-footer">
+                        <button class="form-control btn btn-primary">Ok</button>
+                        <!--<div class="progress">
+                            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100" style="width : 0%;">
+                                <span class="sr-only">progress</span>
+                            </div>
+                        </div>-->
+                        <div class="col-lg-12" style="text-align: center">
+                            <br />
+                            <strong>¿No estas registrado?</strong><br />
+                            <a href="Registro.html">Registro</a>
+                        </div>
+                    </div>
+                    <!-- /.modal-footer -->
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <!-- login --
+    <div id="mw1" class="col-lg-12" style="display:none;position:relative">
+        <div class="container">
+            <div class="lb-register">
+                <div style="height: 3px"></div><br />
+                <div style="text-align: right; width: 400px; height: 40px; background-color: black;"></div>
+                <form action="../Procesos/Login.php" method="post">
+                    <div>
+                        <br />
+                        <h4 style="color: black; text-align: center;">Login</h4>
+                        <br />
+
+                        <div class="col-lg-offset-1">
+
+                            <input id="url" name="url" type="text" hidden="hidden" />
+                            <table>
+                                <tr>
+                                    <td>E-mail: </td>
+                                    <td>
+                                        &nbsp;&nbsp;<input id="emailL" name="emailL" type="text" placeholder="E-mail" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Contraseña: </td>
+                                    <td>
+                                        &nbsp;&nbsp;<input id="contraseñaL" name="contraseñaL" type="password" placeholder="Contraseña" />
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                    <br />
+                    <div style="text-align: center">
+                        <a>
+                            <input type="button" value="Entrar" style="border-radius:10px" />
+                        </a>
+                    </div>
+                </form>
+                <br /><br />
+                <div>
+                    <div class="col-lg-12" style="width: 400px; height: 2px; background-color: gray"></div>
+                    <br />
+                    <div class="col-lg-12" style="text-align: center">
+                        <strong>¿No estas registrado?</strong><br />
+                        <a href="Registro.html">Registro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end login -->
+
+    <!-- CONFIRM COMENTARY --
+        <div id="ms1" class="lb-cover col-md-12">
+            <div class="container">
+                <div class="col-lg-4"></div>
+                <div class="col-md-4">
+                    <div class="ms-a-success fadeInRightBig">
+                        <div style="height: 3px"></div>
+                        <div style="margin-left: 3px; margin-right: 3px; text-align: right; width: 394px; height: 40px; background-color: black; border-radius: 12px 12px 0px 0px">
+                        </div>
+                        <br />
+                        <div class="col-lg-offset-1" style="color: black">
+                            <a>Tu mensaje se ha enviado con éxito.&nbsp;&nbsp;&nbsp;&nbsp;<i><img style="width: 20%" src="../ScanEmp/imgs/ico/free.png" /></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+        !-- END CONFFIRM COMENTARY -->
+
+    <!-- INIT PAGE -->
+    <a class="gototop gototop-button" href="#sb" style="display: none;"><i class="fa fa-chevron-up"></i></a>
+    <!-- END INIT PAGE -->
+    
+    <script type="text/javascript">
+        $(function () {
+            $('#chatHermes').hermes({ key: 'U2FsdGVkX19AOtJwSrCMEIVkrQ3wH5ITyMgSUcmHLg8=', title: 'Scan & Share- Respondemos tus dudas' });
+            $('#messageContainer').css('display', 'block');
+            $('#messageBody').css('display', 'none');
+            $('.closeButton').css('display', 'none');
+        });
+    </script>
+    <script src="ScanEmp/hermes/hermes.plugin.js"></script>
+    <script src="ScanEmp/hermes/speech_chat.js"></script>
+    <input type="button" style="display:none" id="chatHermes" />
+
+    <script type="text/javascript">
+
+        //function mostrarVentana() {
+        //    var b = document.getElementById('mw1');
+        //    var c = b.style.display = "block";
+
+        //    if (window.addEventListener) // older FF
+        //        window.addEventListener('DOMMouseScroll', preventDefault, false);
+        //    window.onwheel = preventDefault; // modern standard
+        //    window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+        //    window.ontouchmove = preventDefault; // mobile
+        //    document.onkeydown = preventDefaultForScrollKeys;
+        //}
+
+        function mSuccess() {
+            setTimeout(function () {
+                $('#ms1').fadeIn(1500);
+            }, 1000)
+            setTimeout(function () {
+                $('#ms1').fadeOut(1500);
+            }, 5000)
+        }
+
+        //function ocultarVentana() {
+        //    var b = document.getElementById('mw1');
+        //    b.style.display = "none";
+
+        //    if (window.removeEventListener)
+        //        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+        //    window.onmousewheel = document.onmousewheel = null;
+        //    window.onwheel = null;
+        //    window.ontouchmove = null;
+        //    document.onkeydown = null;
+        //}
+
+        var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+
+        function preventDefault(e) {
+            e = e || window.event;
+            if (e.preventDefault)
+                e.preventDefault();
+            e.returnValue = false;
+        }
+
+        function preventDefaultForScrollKeys(e) {
+            if (keys[e.keyCode]) {
+                preventDefault(e);
+                return false;
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        function link() {
+            var lin = window.location;
+            $("#url").val(lin);
+        };
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.modal-footer button').click(function () {
+                var button = $(this);
+
+                if (button.attr("data-dismiss") != "modal") {
+                    var inputs = $('form input');
+                    var title = $('.modal-title');
+                    var progress = $('.progress');
+                    var progressBar = $('.progress-bar');
+
+                    var popMargTop = ($(button).height() + 24) / 2;
+                    var popMargLeft = ($(button).width() + 24) / 2;
+
+                    $(button).css({
+                        'margin-top': -popMargTop,
+                        'margin-left': -popMargLeft
+                    });
+
+                    inputs.attr("disabled", "disabled");
+
+                    button.hide();
+
+                    progress.show();
+
+                    progressBar.animate({ "width": "100%" }, 100);
+
+                    progress.delay(1000)
+                            .fadeOut(600);
+
+                    button.text("Close")
+                            .removeClass("btn-primary")
+                            .addClass("btn-success")
+                            .blur()
+                            .delay(1600)
+                            .fadeIn(function () {
+                                title.text("Log in is successful");
+                                button.attr("data-dismiss", "modal");
+                            });
+                }
+            });
+
+            $('#myModal').on('hidden.bs.modal', function (e) {
+                var inputs = $('form input');
+                var title = $('.modal-title');
+                var progressBar = $('.progress-bar');
+                var button = $('.modal-footer button');
+
+                inputs.removeAttr("disabled");
+
+                title.text("Log in");
+
+                progressBar.css({ "width": "0%" });
+
+                button.removeClass("btn-success")
+                        .addClass("btn-primary")
+                        .text("Ok")
+                        .removeAttr("data-dismiss");
+            });
+        });
+    </script>
+
+    <script src="ScanEmp/js/jquery.min.js"></script>
+    <script src="ScanEmp/js/css3-animate-it.js"></script>
+
+    <script src="../ScanEmp/js/contact.js"></script>
+    <script src="../ScanEmp/js/jquery-1.11.2.min.js"></script>
+    <script src="../ScanEmp/js/plugins.js"></script>
+    <script src="../ScanEmp/js/theme-functions.js"></script>
+    <script src="../ScanEmp/js/custom.js"></script>
+</body>
+</html>
+
